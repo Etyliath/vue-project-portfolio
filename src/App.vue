@@ -1,8 +1,8 @@
 <script setup>
+import { RouterView } from 'vue-router'
 </script>
 
 <template>
-  <h1>Portfolio</h1>
-  <p>contenu a déveopper</p>
+  <RouterView />
 </template>
 
