@@ -1,5 +1,6 @@
 <script setup>
 import TheHeader from '../components/TheHeader.vue';
+import TheFooter from '../components/TheFooter.vue';
 </script>
 <template>
     <header>
@@ -55,11 +56,12 @@ import TheHeader from '../components/TheHeader.vue';
         </section>
     </main>
     <footer>
-        copyright Edouard DA SILVA 2023
+        <TheFooter />
     </footer>
 </template>
 <style>
 .main{
     margin-top: 95px;
+    padding: 0 0.8em;
 }
 </style>
