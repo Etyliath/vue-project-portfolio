@@ -3,7 +3,7 @@ import { RouterLink } from 'vue-router'
 </script>
 <template>
     <div class="container">
-        <h1>404 Not found</h1>
+        <h1>Not found</h1>
         <img src="../assets/images/erreur-404.png" alt="">
         <p>Oops, this page didn't exists</p>
         <div class="back-home">
