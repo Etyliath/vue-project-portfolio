@@ -14,7 +14,8 @@ const router = createRouter({
         name: 'NotFound',
         component: ()=>import('@/views/NotFoundView.vue')
       }
-    ]
+    ],
+    linkActiveClass:'portfolio-active-link'
   })
   
   export default router
