@@ -3,10 +3,10 @@ import TheHeader from '../components/TheHeader.vue';
 import TheFooter from '../components/TheFooter.vue';
 </script>
 <template>
-    <header>
+    <header id="header">
         <TheHeader />
     </header>
-    <main class="main">
+    <main class="main" id="main">
         <section id="presentation">
             <h2>Presentation</h2>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
@@ -61,7 +61,8 @@ import TheFooter from '../components/TheFooter.vue';
 </template>
 <style>
 .main{
-    margin-top: 95px;
-    padding: 0 0.8em;
+    /* margin-top: 95px; */
+    padding: 95px 0.8em 0;
+    z-index: 2;
 }
 </style>

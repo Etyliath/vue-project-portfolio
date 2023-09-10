@@ -1,13 +1,13 @@
 <script setup>
-import { RouterLink } from 'vue-router';
+// import { RouterLink } from 'vue-router';
 </script>
 <template>
     <div class="header">
         <h1>Portfolio</h1>
         <nav class="nav">
-            <a href="#"><img src="../assets/images/MonProfil_mini.jpg" alt="photo de edouard"></a>
-            <RouterLink to="/">Accueil</RouterLink>
-            <a href="#presentation">Présentation</a>
+            <a href="#header"><img src="../assets/images/MonProfil_mini.jpg" alt="photo de edouard"></a>
+            <!-- <RouterLink to="/">Accueil</RouterLink> -->
+            <a href="#main">Présentation</a>
             <a href="#creations">Création</a>
             <a href="#contact">Contact</a>
         </nav>
@@ -15,7 +15,7 @@ import { RouterLink } from 'vue-router';
 </template>
 <style>
 .header {
-    position: fixed;
+    position:fixed;
     top: 0;
     left: 0;
     right: 0;
@@ -26,7 +26,7 @@ import { RouterLink } from 'vue-router';
     margin: 0;
     border-bottom: 2px solid rgb(94, 148, 202, 0.8);
     background: linear-gradient(rgba(76, 135, 106, 0.6), 15%, rgb(94, 148, 202, 0.6));
-
+    z-index: 3;
 }
 
 .header h1 {
@@ -49,7 +49,12 @@ import { RouterLink } from 'vue-router';
     padding: 0.6rem 0.8rem;
     font-size: 18px;
 }
-.nav .portfolio-active-link{
+
+.nav a:active{
+    border-bottom: 2px solid white;
+}
+
+.nav .portfolio-active-link {
     border-bottom: 2px solid white;
 }
 
