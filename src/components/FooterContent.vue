@@ -1,5 +1,5 @@
 <template>
-    <div class="footer">
+    <footer class="footer">
         <div class="copyright">
             <small>copyright Edouard DA SILVA</small>
         </div>
@@ -12,22 +12,24 @@
                     class="reseaux__github"></a>
         </div>
         <div class="publish">
-           <small>publié : <time datetime="2023-09-09"> 09 septembre 2023 </time></small> 
+            <small>publié : <time datetime="2023-09-09"> 09 septembre 2023 </time></small>
         </div>
-    </div>
+    </footer>
 </template>
 <style>
 .footer {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    margin: 0;
+    flex-wrap: wrap;
+    margin-top: auto;
+    padding: 0 0.8em 0;
     border-top: 2px solid rgba(94, 148, 202, 0.8);
     background: linear-gradient(rgba(94, 148, 202, 0.6), 80%, rgba(76, 135, 106, 0.6));
 }
 
 .copyright {
-   color: white;
+    color: white;
 }
 
 .social {
@@ -38,9 +40,10 @@
 .social a {
     text-decoration: none;
     line-height: 0.7em;
-    padding: 1em 1em;
+    padding: 1em ;
 }
-.publish{
+
+.publish {
     color: white;
 }
 </style>

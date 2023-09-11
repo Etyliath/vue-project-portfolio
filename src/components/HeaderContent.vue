@@ -2,26 +2,23 @@
 // import { RouterLink } from 'vue-router';
 </script>
 <template>
-    <div class="header">
+    <header class="header" id="header">
         <h1>Portfolio</h1>
         <nav class="nav">
             <a href="#header"><img src="../assets/images/MonProfil_mini.jpg" alt="photo de edouard"></a>
             <!-- <RouterLink to="/">Accueil</RouterLink> -->
-            <a href="#main">Présentation</a>
+            <a href="#presentation">Présentation</a>
             <a href="#creations">Création</a>
             <a href="#contact">Contact</a>
         </nav>
-    </div>
+    </header>
 </template>
 <style>
 .header {
-    position:fixed;
-    top: 0;
-    left: 0;
-    right: 0;
     display: flex;
     justify-content: end;
     align-items: center;
+    flex-wrap: wrap;
     background: rgb(94, 148, 202, 0.7);
     margin: 0;
     border-bottom: 2px solid rgb(94, 148, 202, 0.8);
@@ -40,6 +37,7 @@
 .nav {
     display: flex;
     align-items: center;
+    flex-wrap: wrap;
     margin-right: 20px;
 }
 
@@ -50,7 +48,7 @@
     font-size: 18px;
 }
 
-.nav a:active{
+.nav a:active {
     border-bottom: 2px solid white;
 }
 
@@ -63,4 +61,5 @@ img {
     height: auto;
     border-radius: 10px;
     border: none;
-}</style>
+}
+</style>

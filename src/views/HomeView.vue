@@ -1,68 +1,10 @@
 <script setup>
-import TheHeader from '../components/TheHeader.vue';
-import TheFooter from '../components/TheFooter.vue';
+import HeaderContent from '../components/HeaderContent.vue';
+import FooterContent from '../components/FooterContent.vue';
+import MainContent from '../components/MainContent.vue'
 </script>
 <template>
-    <header id="header">
-        <TheHeader />
-    </header>
-    <main class="main" id="main">
-        <section id="presentation">
-            <h2>Presentation</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-        </section>
-        <section id="creations">
-            <h2>Créations</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-                    </section>
-        <section id="contact">
-            <h2>Contact</h2>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus cumque?</p>
-        </section>
-    </main>
-    <footer>
-        <TheFooter />
-    </footer>
+    <HeaderContent />
+    <MainContent />
+    <FooterContent />
 </template>
-<style>
-.main{
-    /* margin-top: 95px; */
-    padding: 95px 0.8em 0;
-    z-index: 2;
-}
-</style>
