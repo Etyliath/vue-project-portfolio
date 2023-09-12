@@ -3,7 +3,6 @@ import CreationContent from '@/components/CreationContent.vue'
 import { ref } from 'vue';
 import sourceData from '@/data.json'
 const creations = ref(sourceData.creations)
-console.log(creations)
 </script>
 <template>
     <main class="main" id="main">
@@ -22,8 +21,7 @@ console.log(creations)
                 <CreationContent
                     v-for="creation in creations"
                     :key="creation.id"
-                    :title="creation.title"
-                    :image="creation.image"
+                    :creation="creation"
                 />
             </div>
         </section>

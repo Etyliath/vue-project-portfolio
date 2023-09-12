@@ -4,11 +4,11 @@
             <small>copyright Edouard DA SILVA</small>
         </div>
         <div class="social">
-            <a href="https://www.linkedin.com/" target="_blank"><img src="../assets/images/linkedin.png" alt="Linkedin"
+            <a href="https://www.linkedin.com/" target="_blank"><img src="/images/linkedin.png" alt="Linkedin"
                     class="reseaux__linkedin"></a>
-            <a href="https://twitter.com/" target="_blank"><img src="../assets/images/twitter.png" alt="twitter"
+            <a href="https://twitter.com/" target="_blank"><img src="/images/twitter.png" alt="twitter"
                     class="reseaux__twitter"></a>
-            <a href="http://github.com/" target="_blank"><img src="../assets/images/signe-github.png" alt="GitHub"
+            <a href="http://github.com/" target="_blank"><img src="/images/signe-github.png" alt="GitHub"
                     class="reseaux__github"></a>
         </div>
         <div class="publish">

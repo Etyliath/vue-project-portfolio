@@ -4,7 +4,7 @@ import { RouterLink } from 'vue-router'
 <template>
     <div class="container">
         <h1>Not found</h1>
-        <img src="../assets/images/erreur-404.png" alt="">
+        <img src="/images/erreur-404.png" alt="">
         <p>Oops, this page didn't exists</p>
         <div class="back-home">
             <RouterLink to="/">Accueil</RouterLink>
