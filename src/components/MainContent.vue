@@ -1,5 +1,6 @@
 <script setup>
 import CreationContent from '@/components/CreationContent.vue'
+import FormContact from './FormContact.vue';
 import { ref } from 'vue';
 import sourceData from '@/data.json'
 const creations = ref(sourceData.creations)
@@ -27,11 +28,7 @@ const creations = ref(sourceData.creations)
         </section>
         <section id="contact">
             <h2>Contact</h2>
-            <p>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis nisi eveniet aut quis fuga exercitationem
-                asperiores modi, ullam beatae qui sequi ipsum sed voluptate debitis eligendi cum. Quibusdam, temporibus
-                cumque?
-            </p>
+            <FormContact />
         </section>
     </main>
 </template>
