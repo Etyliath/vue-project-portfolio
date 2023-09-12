@@ -1,11 +1,22 @@
 <script setup>
-defineProps(['title','image'])
+import { ref } from 'vue';
+import CreationDetail from '@/components/CreationDetail.vue'
+
+defineProps(['creation'])
+
+const revele=ref(false)
+
+function toggleModale() {
+    revele.value = !revele.value
+}
+
 </script>
 <template>
     <div class="creation-item">
-        <h3> {{ title }}</h3>
-        <a href="#"><img :src="`/images/${image}`" alt="image d'une page web"></a>
+        <h3> {{ creation.title }}</h3>
+        <img :src="`/images/${creation.image}`" alt="image d'une page web" @click="toggleModale">
     </div>
+    <CreationDetail :revele="revele" :toggleModale="toggleModale" :creation="creation"/>
 </template>
 <style>
 

@@ -3,32 +3,32 @@
     {
       "id": 1,
       "title": "Mon CV en ligne",
-      "image": "site-moncv.png",
-      "detail": {
-        "date": "10/08/2023",
-        "techno": "html css",
-        "link": "https//hh.org"
-      }
+      "image": "projet-moncv-enligne.png",
+      "image2": "projet-moncv-enligne-code-html.png",
+      "image3": "projet-moncv-enligne-code-css.png",
+      "date": "26/07/2023",
+      "techno": "html css",
+      "link": "https://github.com/Etyliath/Devoir_MonCVEnLigne.git"
     },
     {
         "id": 2,
-        "title": "Redaction d'un cahier des chager",
-        "image": "cahier-charge-socketerie.png",
-        "detail": {
-          "date": "10/08/2023",
-          "techno": "html css",
-          "link": "https//hh.org"
-        }
+        "title": "Redaction d'un cahier des charges",
+        "image": "projet-cahier-des-charges.png",
+        "image2": "projet-cahier-des-charges-chartes.png",
+        "image3": "projet-cahier-des-charges-planning.png",
+        "date": "20/08/2023",
+        "techno": "word figma gantt",
+        "link": "/files/Cahier-des-chages-la-Socketterie-v1.pdf"
       },
       {
         "id": 3,
         "title": "Dynamiser un site communautaire",
-        "image": "dynamiser-commentaire.png",
-        "detail": {
-          "date": "10/08/2023",
-          "techno": "html css",
-          "link": "https//hh.org"
-        }
+        "image": "projet-dynamiser-espace-communautaire.png",
+        "image2": "projet-dynamiser-espace-communautaire-code-html.png",
+        "image3": "projet-dynamiser-espace-communautaire-code-javascript.png",
+        "date": "30/08/2023",
+        "techno": "html javascript",
+        "link": "https://github.com/Etyliath/DynamiserUnEspaceDeCommentaires.git"
       }
   ]
 }

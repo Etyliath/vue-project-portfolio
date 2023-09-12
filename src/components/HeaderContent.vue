@@ -5,7 +5,7 @@
     <header class="header" id="header">
         <h1>Portfolio</h1>
         <nav class="nav">
-            <a href="#header"><img src="../assets/images/MonProfil_mini.jpg" alt="photo de edouard"></a>
+            <a href="#header"><img src="/images/MonProfil_mini.jpg" alt="photo de edouard"></a>
             <!-- <RouterLink to="/">Accueil</RouterLink> -->
             <a href="#presentation">Présentation</a>
             <a href="#creations">Création</a>
