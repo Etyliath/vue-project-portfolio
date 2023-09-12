@@ -16,7 +16,7 @@
         </div>
     </footer>
 </template>
-<style>
+<style scoped>
 .footer {
     display: flex;
     justify-content: space-between;
@@ -41,6 +41,9 @@
     text-decoration: none;
     line-height: 0.7em;
     padding: 1em ;
+}
+.social img{
+    width: 50px;
 }
 
 .publish {
