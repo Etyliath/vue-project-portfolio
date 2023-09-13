@@ -38,7 +38,7 @@ function activeClass(link) {
             <a href="#creations" :class="{ active: isCreationsActive }" @click="activeClass('creations')">Création</a>
             <a href="#contact" :class="{ active: isContactActive }" @click="activeClass('contact')">Contact</a>
         </nav>
-        <a href="#top" class="go-top"><img src="/images/chevrons-haut.svg" alt="2 chevrons vers le haut"></a>
+        <a href="#top" class="go-top" @click="activeClass">Haut </a>
     </header>
 </template>
 <style scoped>
@@ -90,7 +90,7 @@ a {
 .go-top {
     position: fixed;
     bottom: 90px;
-    right: 30px;
+    right: 10px;
     font-size: 15px;
     color: rgba(0, 0, 0, 0.5);
     text-decoration: none;
@@ -98,6 +98,25 @@ a {
     border: 1px solid;
     border-radius: 5px;
     padding: 0.2em;
+    transition: right .9S;
 }
-
+.go-top::after{
+    content: '';
+    display: inline-block;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-bottom: 15px solid rgba(0,0,0,0.5);
+}
+@media only screen and (min-width: 1400px){
+    .go-top{
+        right: 130px;
+        transition: right .9S;
+    }
+}
+@media only screen and (min-width: 1600px){
+    .go-top{
+        right: 200px;
+        transition: right .9S;
+    }
+}
 </style>
