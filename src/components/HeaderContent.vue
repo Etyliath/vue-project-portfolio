@@ -47,12 +47,11 @@ function activeClass(link) {
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    color: white;
-    background: rgb(94, 148, 202, 0.7);
+    color: var(--primary-text-color);
     margin: 0;
     padding: 10px 20px 10px 10px;
-    border-bottom: 2px solid rgb(94, 148, 202, 0.8);
-    background: linear-gradient(rgba(76, 135, 106, 0.6), 15%, rgb(94, 148, 202, 0.6));
+    border-bottom: 2px solid var(--primary-border-color);
+    background: linear-gradient(var(--secondary-bg-color), 40%, var(--primary-bg-color));
     z-index: 4;
 }
 
@@ -80,11 +79,11 @@ a {
 }
 
 .active {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--primary-text-color);
 }
 
 .topbar-nav .portfolio-active-link {
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid var(--primary-text-color);
 }
 
 .go-top {
@@ -105,7 +104,7 @@ a {
     display: inline-block;
     border-left: 5px solid transparent;
     border-right: 5px solid transparent;
-    border-bottom: 15px solid rgba(0,0,0,0.5);
+    border-bottom: 15px solid var(--primary-border-color);
 }
 @media only screen and (min-width: 1400px){
     .go-top{

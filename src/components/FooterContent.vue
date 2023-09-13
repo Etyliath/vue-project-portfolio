@@ -1,9 +1,9 @@
 <template>
     <footer class="footer">
-        <div class="copyright">
+        <div class="footer__copyright">
             <small>copyright Edouard DA SILVA</small>
         </div>
-        <div class="social">
+        <div class="footer__social">
             <a href="https://www.linkedin.com/" target="_blank"><img src="/images/linkedin.png" alt="Linkedin"
                     class="reseaux__linkedin"></a>
             <a href="https://twitter.com/" target="_blank"><img src="/images/twitter.png" alt="twitter"
@@ -11,7 +11,7 @@
             <a href="http://github.com/" target="_blank"><img src="/images/signe-github.png" alt="GitHub"
                     class="reseaux__github"></a>
         </div>
-        <div class="publish">
+        <div class="footer__publish">
             <small>publié : <time datetime="2023-09-09"> 09 septembre 2023 </time></small>
         </div>
     </footer>
@@ -24,29 +24,29 @@
     flex-wrap: wrap;
     margin-top: auto;
     padding: 0 0.8em 0;
-    border-top: 2px solid rgba(94, 148, 202, 0.8);
-    background: linear-gradient(rgba(94, 148, 202, 0.6), 80%, rgba(76, 135, 106, 0.6));
+    border-top: 2px solid var(--primary-border-color);
+    background: linear-gradient(var(--primary-bg-color), 60%, var(--secondary-bg-color));
 }
 
-.copyright {
-    color: white;
+.footer__copyright {
+    color: var(--primary-text-color);
 }
 
-.social {
+.footer__social {
     display: flex;
     justify-content: space-between;
 }
 
-.social a {
+.footer__social a {
     text-decoration: none;
     line-height: 0.7em;
     padding: 1em ;
 }
-.social img{
+.footer__social img{
     width: 50px;
 }
 
-.publish {
-    color: white;
+.footer__publish {
+    color: var(--primary-text-color);
 }
 </style>

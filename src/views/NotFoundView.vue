@@ -28,7 +28,7 @@ import { RouterLink } from 'vue-router'
     padding: 5px 20px;
     border: 1px solid;
     border-radius: 5px;
-    background: #f2f2f2;
+    background: var(--primary-bg-color);
 }
 
 .back-home a {

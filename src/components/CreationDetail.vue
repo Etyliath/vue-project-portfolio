@@ -33,7 +33,7 @@ defineProps(['revele', 'toggleModale', 'creation'])
 }
 
 .modale__overlay {
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.6);
     position: fixed;
     top: 0;
     bottom: 0;
@@ -42,11 +42,11 @@ defineProps(['revele', 'toggleModale', 'creation'])
 }
 
 .modale__bloc {
-    background: #f1f1f1;
-    color: #333;
+    background: var(--primary-bg-color);
+    color: var(--primary-text-color);
     padding: 1.5em;
     position: fixed;
-    top: 10%;
+    top: 15%;
     border-radius: 10px;
 }
 
@@ -63,7 +63,7 @@ defineProps(['revele', 'toggleModale', 'creation'])
     height: 1px;
     width: 100px;
     margin: 10px auto 0;
-    background: #000;
+    background: var(--primary-text-color);
 }
 .modale__text{
 font-size: 1.1em;
@@ -75,11 +75,11 @@ margin: 10px 0;
 .modale__link {
     font-size: 1.1em;
     text-decoration: none;
-    color: rgba(0,0,0,0.5);
+    color: var(--primary-text-color-tr);
 }
 .modale__link:hover {
-    color: rgba(0,0,0,0.8);
-    border-bottom: 2px solid rgba(0,0,0,0.8);
+    color: var(--primary-text-color);
+    border-bottom: 2px solid var(--primary-text-color);
     transition: 0.3s;
 }
 .modale__link::after {
@@ -88,7 +88,7 @@ margin: 10px 0;
     height: 1px;
     width: 100px;
     margin: 10px auto;
-    background: #000;
+    background: var(--primary-border-color);
 }
 .modale__images {
     display: flex;
@@ -102,10 +102,10 @@ margin: 10px 0;
     position: absolute;
     top: 10px;
     right: 10px;
-    background: red;
-    color: white;
+    background: var(--secondary-bg-color);
+    color: var(--primary-text-color);
     padding: 0.2em 0.4em;
-    border: 1px solid white;
+    /* border: 1px solid white; */
     border-radius: 5px;
     cursor: pointer;
 }

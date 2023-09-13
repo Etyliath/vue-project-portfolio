@@ -51,7 +51,7 @@ const creations = ref(sourceData.creations)
 
 #presentation {
     padding-bottom: 0.6em;
-    border-bottom: 2px solid rgba(94, 148, 202, 0.8);
+    border-bottom: 2px solid var(--primary-text-color);
 }
 
 .creations {
@@ -60,7 +60,7 @@ const creations = ref(sourceData.creations)
     flex-wrap: wrap;
     align-items: start;
     padding: 0 0.8em 0.6em;
-    border-bottom: 2px solid rgba(94, 148, 202, 0.8);
+    border-bottom: 2px solid var(--primary-text-color);
 }
 
 </style>

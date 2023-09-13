@@ -1,5 +1,11 @@
-@import url('https://fonts.googleapis.com/css2?family=Lisu+Bosa:ital,wght@0,400;0,700;1,400&display=swap');
-
+:root{
+  --primary-bg-color: rgb(217, 217, 217);
+  --primary-bg-color-tr: rgba(217, 217, 217,0.8);
+  --secondary-bg-color: rgb(140, 138, 128);
+  --primary-text-color: rgb(46, 45, 64);
+  --primary-text-color-tr: rgb(46, 45, 64,0.5);
+  --primary-border-color: rgba(46, 45, 64,0.4);
+}
 *,
 *::before,
 *::after {
@@ -16,11 +22,10 @@ body {
   display: flex;
   flex-direction: column;
   /* min-height: 100vh; */
-  color: rgba(22, 22, 22, 0.64);
-  background: rgba(94, 148, 202, 0.3);
-  transition: color 0.5s, background-color 0.5s;
+  color: var(--primary-text-color);
+  /* transition: color 0.5s, background-color 0.5s; */
   line-height: 1.2;
-  font-family: 'Lisu Bosa', serif;
+  font-family: 'Roboto', sans-serif;
   font-size: 15px;
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
@@ -28,8 +33,9 @@ body {
 }
 
 #app {
-  height: 100%;
+  /* height: 100%; */
   max-width: 1280px;
+  background: var(--primary-bg-color);
   display: flex;
   flex-direction: column;
   margin: 0 auto;
