@@ -3,25 +3,25 @@ defineProps(['revele', 'toggleModale', 'creation'])
 </script>
   
 <template>
-    <div class="bloc-modale" v-if="revele">
-        <div class="overlay" @click="toggleModale"></div>
-        <div class="modale">
-            <div class="btn-modale" @click="toggleModale">X</div>
-            <h3> {{ creation.title }}</h3>
-            <p>date de creation: {{ creation.date }}</p>
-            <p>technologie utilisées: {{ creation.techno }}</p>
-            <a :href="`${creation.link}`" target="_blank">lien vers la création</a>
-            <div class="modale-images">
-                <img :src="`/images/${creation.image}`" alt="image d'une page web">
-                <img :src="`/images/${creation.image2}`" alt="image d'une page web">
-                <img :src="`/images/${creation.image3}`" alt="image d'une page web">
+    <div class="modale" v-if="revele">
+        <div class="modale__overlay" @click="toggleModale"></div>
+        <div class="modale__bloc">
+            <div class="modale__button" @click="toggleModale">X</div>
+            <h3 class="modale__title"> {{ creation.title }}</h3>
+            <p class="modale__text">Date de creation: <span class="modale__style"> {{ creation.date }} </span> </p>
+            <p class="modale__text">Technologie utilisées: <span class="modale__style"> {{ creation.techno }}</span></p>
+            <a :href="`${creation.link}`" target="_blank" class="modale__link">Voir la création</a>
+            <div class="modale__images">
+                <img :src="`/images/${creation.image}`" :alt="`${creation.alt}`">
+                <img :src="`/images/${creation.image2}`" :alt="`${creation.alt2}`">
+                <img :src="`/images/${creation.image3}`" :alt="`${creation.alt3}`">
             </div>
         </div>
     </div>
 </template>
   
 <style scoped>
-.bloc-modale {
+.modale {
     position: fixed;
     top: 0;
     bottom: 0;
@@ -32,7 +32,7 @@ defineProps(['revele', 'toggleModale', 'creation'])
     align-items: center;
 }
 
-.overlay {
+.modale__overlay {
     background: rgba(0, 0, 0, 0.5);
     position: fixed;
     top: 0;
@@ -41,39 +41,64 @@ defineProps(['revele', 'toggleModale', 'creation'])
     right: 0;
 }
 
-.modale {
+.modale__bloc {
     background: #f1f1f1;
     color: #333;
     padding: 1.5em;
     position: fixed;
-    top: 20%;
+    top: 10%;
     border-radius: 10px;
 }
 
-.modale-images {
+
+
+.modale__title {
+    font-size: 1.5em;
+    text-align: center;
+    padding: 0.5em 0;
+}
+.modale__title::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin: 10px auto 0;
+    background: #000;
+}
+.modale__text{
+font-size: 1.1em;
+margin: 10px 0;
+}
+.modale__style{
+    font-style: italic;
+}
+.modale__link {
+    font-size: 1.1em;
+    text-decoration: none;
+    color: rgba(0,0,0,0.5);
+}
+.modale__link:hover {
+    color: rgba(0,0,0,0.8);
+    border-bottom: 2px solid rgba(0,0,0,0.8);
+    transition: 0.3s;
+}
+.modale__link::after {
+    content: '';
+    display: block;
+    height: 1px;
+    width: 100px;
+    margin: 10px auto;
+    background: #000;
+}
+.modale__images {
     display: flex;
     align-items: start;
     gap: 10px;
+    flex-wrap: wrap;
     padding: 0.6em 0;
 
 }
-
-.modale h3 {
-    font-size: 1.9em;
-    text-align: center;
-}
-
-.modale P {
-    padding: 0.5em 0;
-
-}
-
-.modale a {
-    text-decoration: none;
-    color: #333;
-}
-
-.btn-modale {
+.modale__button {
     position: absolute;
     top: 10px;
     right: 10px;
