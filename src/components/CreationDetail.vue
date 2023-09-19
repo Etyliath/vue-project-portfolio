@@ -7,9 +7,10 @@ defineProps(['revele', 'toggleModale', 'creation'])
         <div class="modale__overlay" @click="toggleModale"></div>
         <div class="modale__bloc">
             <div class="modale__button" @click="toggleModale">X</div>
-            <h3 class="modale__title"> {{ creation.title }}</h3>
+            <h2 class="modale__title"> {{ creation.title }}</h2>
             <p class="modale__text">Date de creation: <span class="modale__style"> {{ creation.date }} </span> </p>
             <p class="modale__text">Technologie utilisées: <span class="modale__style"> {{ creation.techno }}</span></p>
+            <p class="modale__text">Description: <span class="modale__style"> {{ creation.description }}</span></p>
             <a :href="`${creation.link}`" target="_blank" class="modale__link">Voir la création</a>
             <div class="modale__images">
                 <img :src="`/images/${creation.image}`" :alt="`${creation.alt}`">
@@ -63,7 +64,7 @@ defineProps(['revele', 'toggleModale', 'creation'])
     height: 1px;
     width: 100px;
     margin: 10px auto 0;
-    background: var(--primary-text-color);
+    background: var(--secondary-bg-color);
 }
 .modale__text{
 font-size: 1.1em;
@@ -88,7 +89,7 @@ margin: 10px 0;
     height: 1px;
     width: 100px;
     margin: 10px auto;
-    background: var(--primary-border-color);
+    background: var(--secondary-bg-color);
 }
 .modale__images {
     display: flex;
@@ -97,6 +98,10 @@ margin: 10px 0;
     flex-wrap: wrap;
     padding: 0.6em 0;
 
+}
+.modale__images img{
+    width: 350px;
+    height: auto;
 }
 .modale__button {
     position: absolute;

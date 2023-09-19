@@ -12,7 +12,7 @@
                     class="reseaux__github"></a>
         </div>
         <div class="footer__publish">
-            <small>publié : <time datetime="2023-09-09"> 09 septembre 2023 </time></small>
+            <small>publié : <time datetime="2023-09-09"> 19 septembre 2023 </time></small>
         </div>
     </footer>
 </template>
@@ -24,7 +24,7 @@
     flex-wrap: wrap;
     margin-top: auto;
     padding: 0 0.8em 0;
-    border-top: 2px solid var(--primary-border-color);
+    border-top: 2px solid var(--secondary-bg-color);
     background: linear-gradient(var(--primary-bg-color), 60%, var(--secondary-bg-color));
 }
 

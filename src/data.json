@@ -11,6 +11,7 @@
       "alt3":"image representant du code css",
       "date": "26/07/2023",
       "techno": "html css",
+      "description":"test",
       "link": "https://github.com/Etyliath/Devoir_MonCVEnLigne.git"
     },
     {
@@ -24,6 +25,7 @@
         "alt3":"image representant un planning",
         "date": "20/08/2023",
         "techno": "word figma gantt",
+        "description":"test",
         "link": "/files/Cahier-des-chages-la-Socketterie-v1.pdf"
       },
       {
@@ -37,6 +39,7 @@
         "alt3":"image representant du code javascript",
         "date": "30/08/2023",
         "techno": "html javascript",
+        "description":"test",
         "link": "https://github.com/Etyliath/DynamiserUnEspaceDeCommentaires.git"
       }
   ]

@@ -18,7 +18,7 @@ function toggleModale() {
     </div>
     <CreationDetail :revele="revele" :toggleModale="toggleModale" :creation="creation"/>
 </template>
-<style>
+<style scoped>
 
 .creation-item {
     display: flex;
@@ -27,5 +27,9 @@ function toggleModale() {
 }
 .creation-item h3{
     padding: 0.8em;
+}
+.creation-item img{
+    width: 350px;
+    height: auto;
 }
 </style>
