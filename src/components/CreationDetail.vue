@@ -9,7 +9,6 @@ defineProps(['revele', 'toggleModale', 'creation'])
             <div class="modale__button" @click="toggleModale">X</div>
             <h2 class="modale__title"> {{ creation.title }}</h2>
             <p class="modale__text">Date de creation: <span class="modale__style"> {{ creation.date }} </span> </p>
-            <p class="modale__text">Technologie utilisées: <span class="modale__style"> {{ creation.techno }}</span></p>
             <p class="modale__text">Description: <span class="modale__style"> {{ creation.description }}</span></p>
             <a :href="`${creation.link}`" target="_blank" class="modale__link">Voir la création</a>
             <div class="modale__images">
@@ -51,13 +50,12 @@ defineProps(['revele', 'toggleModale', 'creation'])
     border-radius: 10px;
 }
 
-
-
 .modale__title {
     font-size: 1.5em;
     text-align: center;
     padding: 0.5em 0;
 }
+
 .modale__title::after {
     content: '';
     display: block;
@@ -66,23 +64,28 @@ defineProps(['revele', 'toggleModale', 'creation'])
     margin: 10px auto 0;
     background: var(--secondary-bg-color);
 }
-.modale__text{
-font-size: 1.1em;
-margin: 10px 0;
+
+.modale__text {
+    font-size: 1.1em;
+    margin: 10px 0;
 }
-.modale__style{
+
+.modale__style {
     font-style: italic;
 }
+
 .modale__link {
     font-size: 1.1em;
     text-decoration: none;
     color: var(--primary-text-color-tr);
 }
+
 .modale__link:hover {
     color: var(--primary-text-color);
     border-bottom: 2px solid var(--primary-text-color);
     transition: 0.3s;
 }
+
 .modale__link::after {
     content: '';
     display: block;
@@ -91,6 +94,7 @@ margin: 10px 0;
     margin: 10px auto;
     background: var(--secondary-bg-color);
 }
+
 .modale__images {
     display: flex;
     align-items: start;
@@ -99,10 +103,12 @@ margin: 10px 0;
     padding: 0.6em 0;
 
 }
-.modale__images img{
-    width: 350px;
+
+.modale__images img {
+    width: 300px;
     height: auto;
 }
+
 .modale__button {
     position: absolute;
     top: 10px;
@@ -113,5 +119,4 @@ margin: 10px 0;
     /* border: 1px solid white; */
     border-radius: 5px;
     cursor: pointer;
-}
-</style>
+}</style>
