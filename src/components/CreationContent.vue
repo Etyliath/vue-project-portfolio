@@ -33,5 +33,9 @@ function toggleModale() {
     width: 350px;
     height: auto;
 }
+.creation-item:hover{
+    box-shadow: 8px 8px 8px var(--primary-text-color);
+    cursor: pointer;
+}
 
 </style>

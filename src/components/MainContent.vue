@@ -66,6 +66,7 @@ const creations = ref(sourceData.creations)
 
 .main p {
     line-height: 1.5em;
+    padding: 0.2em 0;
 }
 
 .main__banner {
