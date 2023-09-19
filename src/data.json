@@ -10,8 +10,7 @@
       "image3": "projet-moncv-enligne-code-css.png",
       "alt3":"image representant du code css",
       "date": "26/07/2023",
-      "techno": "html css",
-      "description":"test",
+      "description":"Développement d'un site web en HTML et CSS pour présenter mon CV en ligne",
       "link": "https://github.com/Etyliath/Devoir_MonCVEnLigne.git"
     },
     {
@@ -24,8 +23,7 @@
         "image3": "projet-cahier-des-charges-planning.png",
         "alt3":"image representant un planning",
         "date": "20/08/2023",
-        "techno": "word figma gantt",
-        "description":"test",
+        "description":"Rédaction d'un cahier des charges sur un éditeur de text Word pour la refonte d'un site avec utilisation de figma pour la maquette et Gantt pour le planning ",
         "link": "/files/Cahier-des-chages-la-Socketterie-v1.pdf"
       },
       {
@@ -38,8 +36,7 @@
         "image3": "projet-dynamiser-espace-communautaire-code-javascript.png",
         "alt3":"image representant du code javascript",
         "date": "30/08/2023",
-        "techno": "html javascript",
-        "description":"test",
+        "description":"Dynamiser un site communautaire utlisation du html et du javascript pour réaliser ce projet",
         "link": "https://github.com/Etyliath/DynamiserUnEspaceDeCommentaires.git"
       }
   ]
