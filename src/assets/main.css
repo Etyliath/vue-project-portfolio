@@ -1,35 +1,44 @@
-@import './base.css';
+:root{
+  --primary-bg-color: rgb(217, 217, 217);
+  --primary-bg-color-tr: rgba(217, 217, 217,0.8);
+  --secondary-bg-color: rgb(140, 138, 128);
+  --secondary-bg-color-tr: rgb(140, 138, 128,0.5);
+  --primary-text-color: rgb(46, 45, 64);
+  --primary-text-color-tr: rgb(46, 45, 64,0.5);
+  --primary-border-color: rgba(46, 45, 64,0.4);
+}
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+html,
+body {
+  height: 100%;
+}
+h1, h2, h3{
+  font-family: 'Roboto Serif', serif;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  color: var(--primary-text-color);
+  line-height: 1.2;
+  font-family: 'Roboto', sans-serif;
+  font-size: 15px;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
 
 #app {
+  height: 100%;
   max-width: 1280px;
+  background: var(--primary-bg-color);
+  display: flex;
+  flex-direction: column;
   margin: 0 auto;
-  padding: 2rem;
-
   font-weight: normal;
-}
-
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-}
-
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
-}
-
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
-
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
 }
