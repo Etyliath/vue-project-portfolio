@@ -119,4 +119,5 @@ defineProps(['revele', 'toggleModale', 'creation'])
     /* border: 1px solid white; */
     border-radius: 5px;
     cursor: pointer;
-}</style>
+}
+</style>
