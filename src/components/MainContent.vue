@@ -28,8 +28,7 @@ const creations = ref(sourceData.creations)
                 créé un site web de mon CV et un cahier charges pour la refonte d'un site web et j'ai dynamiser un site communautaire en javascript.
             </p>
             <p> Je suis toujours à la recherche de nouveaux défis et de nouvelles opportunités d’apprentissage. Je suis
-                motivé, curieux et autonome. Je sais m’adapter aux besoins des clients et travailler en équipe. Je suis
-                disponible pour travailler à temps plein ou à temps partiel, en présentiel ou à distance.
+                motivé, curieux et autonome. Je sais m’adapter aux besoins des clients et travailler en équipe.
             </p>
 
         </section>
