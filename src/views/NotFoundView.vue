@@ -15,11 +15,6 @@ import { RouterLink } from 'vue-router'
 </template>
 <style scoped>
 .container {
-    /* position: fixed;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0; */
     width: 1280px;
     flex-grow: 1;
     display: flex;

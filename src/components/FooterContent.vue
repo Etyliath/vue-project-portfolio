@@ -12,7 +12,7 @@
                     class="reseaux__github"></a>
         </div>
         <div class="footer__publish">
-            <small>publié : <time datetime="2023-09-09"> 19 septembre 2023 </time></small>
+            <small>publié : <time datetime="2023-09-21"> 21 septembre 2023 </time></small>
         </div>
     </footer>
 </template>
