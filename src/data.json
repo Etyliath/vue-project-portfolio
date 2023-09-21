@@ -1,0 +1,43 @@
+{
+  "creations": [
+    {
+      "id": 1,
+      "title": "Mon CV en ligne",
+      "image": "projet-moncv-enligne.png",
+      "alt":"image representant une page d'un site web",
+      "image2": "projet-moncv-enligne-code-html.png",
+      "alt2":"image representant du code html",
+      "image3": "projet-moncv-enligne-code-css.png",
+      "alt3":"image representant du code css",
+      "date": "26/07/2023",
+      "description":"Développement d'un site web en HTML et CSS pour présenter mon CV en ligne",
+      "link": "https://github.com/Etyliath/Devoir_MonCVEnLigne.git"
+    },
+    {
+        "id": 2,
+        "title": "Redaction d'un cahier des charges",
+        "image": "projet-cahier-des-charges.png",
+        "alt":"image representant le titre d'une page d'un document",
+        "image2": "projet-cahier-des-charges-chartes.png",
+        "alt2":"image representant une page d'un document",
+        "image3": "projet-cahier-des-charges-planning.png",
+        "alt3":"image representant un planning",
+        "date": "20/08/2023",
+        "description":"Rédaction d'un cahier des charges sur un éditeur de text Word pour la refonte d'un site avec utilisation de figma pour la maquette et Gantt pour le planning ",
+        "link": "/files/Cahier-des-chages-la-Socketterie-v1.pdf"
+      },
+      {
+        "id": 3,
+        "title": "Dynamiser un site communautaire",
+        "image": "projet-dynamiser-espace-communautaire.png",
+        "alt":"image representant une page d'un site web",
+        "image2": "projet-dynamiser-espace-communautaire-code-html.png",
+        "alt2":"image representant du code html",
+        "image3": "projet-dynamiser-espace-communautaire-code-javascript.png",
+        "alt3":"image representant du code javascript",
+        "date": "30/08/2023",
+        "description":"Dynamiser un site communautaire utlisation du html et du javascript pour réaliser ce projet",
+        "link": "https://github.com/Etyliath/DynamiserUnEspaceDeCommentaires.git"
+      }
+  ]
+}
