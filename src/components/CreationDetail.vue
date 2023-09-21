@@ -48,6 +48,8 @@ defineProps(['revele', 'toggleModale', 'creation'])
     position: fixed;
     top: 15%;
     border-radius: 10px;
+    overflow-y: auto;
+    height: auto;
 }
 
 .modale__title {
@@ -119,5 +121,12 @@ defineProps(['revele', 'toggleModale', 'creation'])
     /* border: 1px solid white; */
     border-radius: 5px;
     cursor: pointer;
+}
+
+@media screen and (max-width: 655px) {
+    .modale__images img {
+        width: 150px;
+        height: auto;
+    }
 }
 </style>
