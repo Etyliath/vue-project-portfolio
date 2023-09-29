@@ -19,6 +19,8 @@ const listDemandContact = ref([])
 
 //booléan active la classe pour le message d'erreur
 const isActive = ref(false)
+const toastMessage=ref('')
+const toastStyle=ref({})
 
 /**
  * validation du formulaire de comtact
@@ -28,21 +30,33 @@ function onSubmit(e) {
     e.preventDefault()
     if (name.value === '' || subject.value === '' || message.value === '') {
         isActive.value = true
+        toastStyle.value={
+            border: '1px solid red',
+            color: 'red'
+        }
+        toastMessage.value='tous les champs doivent être remplit'
+        setTimeout(()=>isActive.value = false,3000)
     } else {
         demandContact.value.name = name.value
         demandContact.value.subject = subject.value
         demandContact.value.message = message.value
         listDemandContact.value.push(demandContact)
-        isActive.value = false
         name.value = ''
         subject.value = ''
         message.value = ''
+        isActive.value = true
+        toastStyle.value={
+            border: '1px solid green',
+            color: 'green'
+        }
+        toastMessage.value='Message envoyé'
+        setTimeout(()=>isActive.value = false,3000)
     }
 }
 
 </script>
 <template>
-    <div class="error__message" :class="{ active: isActive }">tous les champs doivent être remplit</div>
+    <div class="toast__message" :class="{ active: isActive }" :style="toastStyle" > {{ toastMessage }} </div>
     <form class="form" @submit="onSubmit">
         <label for="name"> Prénom/Nom</label>
         <input type="text" name="name" id="name" v-model.trim="name">
@@ -54,20 +68,20 @@ function onSubmit(e) {
     </form>
 </template>
 <style scoped>
-.error__message {
+.toast__message {
     display: none;
 }
 
 .active {
     display: block;
     text-align: center;
-    border: 1px solid red;
     margin: 0 auto;
     padding: 0.6em;
     width: fit-content;
-    background: var(--primary-bg-color-tr);
-    color: red;
+    background: white;
     font-style: italic;
+    box-shadow: 8px 8px 8px var(--primary-text-color);
+    border-radius: 10px;
 }
 
 .form {
