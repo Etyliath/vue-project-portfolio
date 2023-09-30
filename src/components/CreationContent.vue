@@ -14,7 +14,7 @@ function toggleModale() {
 <template>
     <div class="creation-item">
         <h3> {{ creation.title }}</h3>
-        <img :src="`/images/${creation.image}`" :alt="`${creation.alt}`" @click="toggleModale">
+        <img :src="`/images/${creation.images[0].image}`" :alt="`${creation.images[0].alt}`" @click="toggleModale">
     </div>
     <CreationDetail :revele="revele" :toggleModale="toggleModale" :creation="creation" />
 </template>

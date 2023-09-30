@@ -12,9 +12,7 @@ defineProps(['revele', 'toggleModale', 'creation'])
             <p class="modale__text">Description: <span class="modale__style"> {{ creation.description }}</span></p>
             <a :href="`${creation.link}`" target="_blank" class="modale__link">Voir la création</a>
             <div class="modale__images">
-                <img :src="`/images/${creation.image}`" :alt="`${creation.alt}`">
-                <img :src="`/images/${creation.image2}`" :alt="`${creation.alt2}`">
-                <img :src="`/images/${creation.image3}`" :alt="`${creation.alt3}`">
+                <img v-for="image in creation.images" :key="image.id" :src="`/images/${image.image}`" :alt="`${image.alt}`">
             </div>
         </div>
     </div>
